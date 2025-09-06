@@ -5,6 +5,8 @@ import NavbarComp from "../Components/NavbarComp.js";
 import AvatarComp from "../Components/AvatarComp.js";
 import CardComp from "../Components/CardComp.js";
 
+import Card1Image from "../Images/12os.png";
+
 function HomePage() {
   return (
     <div>
@@ -14,7 +16,7 @@ function HomePage() {
           <div className="home-banner-container">
             <AvatarComp />
             <div className="home-banner-text-container">
-              <h4 className="padding-bottom-5px">A designer who</h4>
+              <h5 className="padding-bottom-5px">A designer who</h5>
               <h2>Judges a book by its cover...</h2>
             </div>
           </div>
@@ -22,7 +24,7 @@ function HomePage() {
         <div className="section">
           <div className="flex">
             <div className="text-align-left">
-              <h3 className="padding-5px">Beep boop beep boop.|</h3>
+              <h2 className="padding-5px">Beep boop beep boop.|</h2>
               <p>Instance node_modules clean architecture atomic design val.</p>
               <div className="text-container">
                 <p>
@@ -38,7 +40,14 @@ function HomePage() {
           </div>
         </div>
         <div className="section">
-          <CardComp />
+          <div className="flex-container">
+            <CardComp image={Card1Image} />
+            <CardComp image={Card1Image} />
+          </div>
+          <div className="flex-container">
+            <CardComp image={Card1Image} />
+            <CardComp image={Card1Image} />
+          </div>
         </div>
       </div>
     </div>

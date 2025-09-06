@@ -22,6 +22,19 @@
   height: 15vh;
 }
 
+.flex-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
 .flex {
   display: flex;
   flex-direction: column;
