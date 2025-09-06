@@ -50,6 +50,13 @@ code {
     url(./Fonts/Kanit/Kanit-ExtraLight.ttf) format("truetype");
 }
 
+p {
+  font-family: Kanit-Light;
+  font-size: 1em;
+  font-weight: 300;
+  color: #dfdfe6;
+}
+
 h1,
 h2,
 h3,
@@ -69,22 +76,15 @@ h1 {
 
 h2 {
   font-family: Kanit;
-  font-size: 8.5vh;
+  font-size: 2.5em;
   font-weight: 200;
   color: #dfdfe6;
 }
 
 h3 {
   font-family: Kanit;
-  font-size: 6vh;
+  font-size: 2.5em;
   font-weight: 200;
-  color: #dfdfe6;
-}
-
-p {
-  font-family: Kanit-Light;
-  font-size: 3vh;
-  font-weight: 300;
   color: #dfdfe6;
 }
 
@@ -97,7 +97,7 @@ h4 {
 
 h5 {
   font-family: Kanit-ExtraLight;
-  font-size: medium;
+  font-size: 1em;
   color: #dfdfe6;
   margin: 0;
   text-decoration: underline;
@@ -105,7 +105,7 @@ h5 {
 
 h6 {
   font-family: Kanit-ExtraLight;
-  font-size: medium;
+  font-size: 0.5em;
   color: #dfdfe6;
   margin: 0;
 }
