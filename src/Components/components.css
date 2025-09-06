@@ -1,0 +1,42 @@
+.navbar {
+  background-color: #1a0b2e;
+  width: 100%;
+  padding: 10px;
+}
+
+.navbar-button {
+  background-color: #262548;
+  color: whitesmoke;
+  padding: 0.3em;
+  width: fit-content;
+  align-self: center;
+  margin: 5px;
+  border-radius: 7px;
+  display: inline-block;
+}
+
+.navbar-button:hover {
+  background-color: #3e44bd;
+}
+
+.truly-center-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar-image {
+  width: 30vh;
+  height: auto;
+}
+
+.avatar-image-container {
+  display: inline-block;
+  height: fit-content;
+  width: fit-content;
+  padding: 30px;
+  background: radial-gradient(closest-side, #9f8cb1 15%, #320f85, transparent);
+}
+
+.card {
+  display: inline-block;
+}
