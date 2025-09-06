@@ -38,18 +38,30 @@
 }
 
 .card {
+  z-index: 1;
   display: flex;
   flex: 1;
   flex-direction: row;
   align-content: center;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom right, #19052c 15%, #180445);
+  /*background: linear-gradient(to bottom right, #19052c 15%, #180445)*/
+  background: radial-gradient(
+      circle at top left,
+      /* gradient position */ rgba(123, 97, 255, 0.4),
+      /* bright purple glow */ rgba(32, 0, 64, 0.9) 70% /* fades into dark */
+    ),
+    #120024;
   border-radius: 10px;
   width: 15em;
   padding: 20px;
   margin: 10px;
   box-shadow: 1px -3px #320f85;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* lift effect */
+  box-shadow: 3px -5px #320f85;
 }
 
 .card-image {

@@ -40,13 +40,17 @@ function HomePage() {
           </div>
         </div>
         <div className="section">
-          <div className="flex-container">
-            <CardComp image={Card1Image} />
-            <CardComp image={Card1Image} />
-          </div>
-          <div className="flex-container">
-            <CardComp image={Card1Image} />
-            <CardComp image={Card1Image} />
+          <div className="flare-background-container">
+            <div className="flare-background"></div>
+
+            <div className="flex-container">
+              <CardComp image={Card1Image} />
+              <CardComp image={Card1Image} />
+            </div>
+            <div className="flex-container">
+              <CardComp image={Card1Image} />
+              <CardComp image={Card1Image} />
+            </div>
           </div>
         </div>
       </div>

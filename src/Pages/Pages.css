@@ -24,7 +24,6 @@
 
 .flex-container {
   display: flex;
-  gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -32,6 +31,9 @@
 @media (max-width: 768px) {
   .flex-container {
     flex-direction: column;
+    flex-wrap: wrap;
+
+    align-items: center;
   }
 }
 
@@ -62,4 +64,22 @@
 .text-container {
   max-width: 60vw;
   text-align: left;
+}
+
+.flare-background-container {
+  position: relative;
+  z-index: 1;
+}
+
+.flare-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 70%;
+  min-width: 60%;
+  min-height: 100%;
+  background: radial-gradient(circle at center, #d3bbea, #4b0082, #0c0b1e);
+  filter: blur(120px);
+  z-index: -1;
 }
