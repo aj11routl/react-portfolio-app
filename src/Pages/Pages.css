@@ -1,9 +1,10 @@
 .content {
-  margin-top: 7%;
+  background-color: var(--background);
 }
 
 .section {
   background-color: var(--background);
+  width: 100%;
   align-content: center;
   text-align: center;
   margin-top: 5vh;
@@ -66,6 +67,10 @@
   text-align: left;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .flare-background-container {
   position: relative;
   z-index: 1;
@@ -75,11 +80,32 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 70%;
-  min-width: 60%;
-  min-height: 100%;
+  transform: translate(-50%, -70%);
+  width: 50%;
+  height: 50%;
   background: radial-gradient(circle at center, #d3bbea, #4b0082, #0c0b1e);
   filter: blur(120px);
   z-index: -1;
+}
+
+.default-text-container {
+  color: #d3bbea;
+  display: inline-block;
+  min-width: 60%;
+  text-align: left;
+  padding: 50px;
+  z-index: 1;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade.in-view {
+  animation: fade 1s 0.75s both;
 }

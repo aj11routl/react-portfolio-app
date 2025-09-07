@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #1a0b2e;
+  background-color: var(--navbar);
   width: 100%;
   padding: 10px;
 }
@@ -17,6 +17,14 @@
 
 .navbar-button:hover {
   background-color: #3e44bd;
+}
+
+.footer {
+  background-color: #130820;
+  background: linear-gradient(#130820, var(--navbar));
+  padding: 30px;
+  width: 100%;
+  height: 100px;
 }
 
 .truly-center-grid {
@@ -53,10 +61,30 @@
     ),
     #120024;
   border-radius: 10px;
-  width: 15em;
+  width: 20em;
   padding: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 10px;
-  box-shadow: 1px -3px #320f85;
+  box-shadow: 0px -3px #320f85;
+}
+
+.left-fade {
+  background: radial-gradient(
+      circle at top left,
+      /* gradient position */ rgba(123, 97, 255, 0.4),
+      /* bright purple glow */ rgba(32, 0, 64, 0.9) 70% /* fades into dark */
+    ),
+    #120024;
+}
+
+.right-fade {
+  background: radial-gradient(
+      circle at top right,
+      /* gradient position */ rgba(123, 97, 255, 0.4),
+      /* bright purple glow */ rgba(32, 0, 64, 0.9) 70% /* fades into dark */
+    ),
+    #120024;
 }
 
 .card:hover {
