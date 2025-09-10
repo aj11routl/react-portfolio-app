@@ -11,8 +11,14 @@ function FeaturedProjectComp({
   thumbnailImage,
 }) {
   return (
-    <div className="flex-container">
-      <div className="featured-project-container">
+    <div className="flex-container break">
+      {/* break class adds 20vh margin under container */}
+      <div
+        className={
+          "featured-project-container" +
+          (alignLeft ? " left-shift" : " right-shift")
+        }
+      >
         <div
           className={
             "project-box" +
@@ -33,9 +39,12 @@ function FeaturedProjectComp({
             <div
               className={
                 "project-image-box" +
-                (alignLeft ? " left-anchor" : " right-anchor")
+                (alignLeft ? " left-anchor" : " right-anchor") +
+                " flare-background-container"
               }
             >
+              <div className="flare-background-large"></div>
+
               <img
                 src={thumbnailImage}
                 className="featured-project-thumbnail-image"
@@ -53,7 +62,6 @@ function FeaturedProjectComp({
           </div>
         </div>
       </div>
-      <div className="break-15vh" />
     </div>
   );
 }

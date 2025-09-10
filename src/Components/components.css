@@ -117,8 +117,8 @@
   max-width: 380px;
   min-height: 120px;
   padding: 15px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 30px;
+  padding-right: 30px;
   border-radius: 10px;
 }
 
@@ -149,7 +149,6 @@
 }
 
 .featured-project-container {
-  max-width: 450px;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -159,6 +158,14 @@
   position: relative;
   height: fit-content;
   width: fit-content;
+}
+
+.featured-project-container.left-shift {
+  transform: translate(-20%);
+}
+
+.featured-project-container.right-shift {
+  transform: translate(20%);
 }
 
 .project-box {

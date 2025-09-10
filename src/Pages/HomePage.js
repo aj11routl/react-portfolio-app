@@ -116,7 +116,7 @@ function HomePage() {
         />
         <FeaturedProjectComp
           alignLeft={true}
-          projectTitle="Loose Leads - React app"
+          projectTitle="Loose Leads - React app Testiftheposi"
           thumbnailImage={looseleadsImage}
         />
       </div>
