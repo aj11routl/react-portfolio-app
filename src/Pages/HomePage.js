@@ -2,13 +2,18 @@ import "./Pages.css";
 
 import React from "react";
 
-import TrulyNavbarComp from "../Components/TrulyNavbarComp.js";
 import NavbarComp from "../Components/NavbarComp.js";
 import AvatarComp from "../Components/AvatarComp.js";
 import CardComp from "../Components/CardComp.js";
 
 import Card1Image from "../Images/12os.png";
 import FooterComp from "../Components/FooterComp.js";
+import TextBubbleComp from "../Components/TextBubbleComp.js";
+import FeaturedProjectComp from "../Components/FeaturedProjectComp.js";
+
+import dogadoptImage from "../Images/dogadopt-thumbnail.png";
+import houseplantImage from "../Images/houseplant-thumbnail.png";
+import looseleadsImage from "../Images/looseleads-thumbnail.png";
 
 function HomePage() {
   React.useEffect(() => {
@@ -16,9 +21,14 @@ function HomePage() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("in-view");
+            if (entry.target.classList.contains("delay")) {
+              entry.target.classList.add("in-view-delay");
+            } else {
+              entry.target.classList.add("in-view");
+            }
           } else {
             entry.target.classList.remove("in-view");
+            entry.target.classList.remove("in-view-delay");
           }
         });
       },
@@ -28,7 +38,7 @@ function HomePage() {
       }
     );
 
-    const tags = document.querySelectorAll("h2, p, .card");
+    const tags = document.querySelectorAll("h1, p, .card, h3");
 
     tags.forEach((tag) => {
       observer.observe(tag);
@@ -42,15 +52,15 @@ function HomePage() {
           <AvatarComp />
           <div className="home-banner-text-container">
             <h5 className="padding-bottom-5px underline">A designer who</h5>
-            <h2 className="fade">
+            <h1 className="fade">
               Judges a book by its <span className="purple">cover...</span>
-            </h2>
+            </h1>
           </div>
         </div>
       </div>
       <div className="section">
         <div className="default-text-container">
-          <h2 className="padding-5px fade">Beep boop beep boop.|</h2>
+          <h1 className="padding-5px fade">Beep boop beep boop.|</h1>
           <p className="fade">
             Instance node_modules clean architecture atomic design val.
           </p>
@@ -65,35 +75,50 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="section">
+      <div className="section break">
         <div className="default-text-container">
-          <h2 className="fade">Work Experience</h2>
+          <h1 className="fade">Work Experience</h1>
         </div>
         <div className="break-15vh"></div>
         <div className="flare-background-container">
           <div className="flare-background"></div>
 
           <div className="flex-container">
-            <CardComp image={Card1Image} fadeRight={true} />
-            <CardComp image={Card1Image} fadeRight={false} />
+            <CardComp image={Card1Image} flareRight={true} delay={false} />
+            <CardComp image={Card1Image} flareRight={false} delay={false} />
           </div>
           <div className="flex-container">
-            <CardComp image={Card1Image} fadeRight={true} />
-            <CardComp image={Card1Image} fadeRight={false} />
+            <CardComp image={Card1Image} flareRight={true} delay={true} />
+            <CardComp image={Card1Image} flareRight={false} delay={true} />
           </div>
         </div>
       </div>
-      <div className="break-15vh" />
       <div className="section">
         <div className="default-text-container">
-          <h4>
-            <center>
+          <center>
+            <h3 className="fade">
               I'm looking to kickstart a career in tech by joining a team in
               <span className="purple"> software development</span>, or{" "}
               <span className="purple">IT</span>.
-            </center>
-          </h4>
+            </h3>
+          </center>
         </div>
+
+        <FeaturedProjectComp
+          alignLeft={true}
+          projectTitle="DogAdopt - REST Website Project"
+          thumbnailImage={dogadoptImage}
+        />
+        <FeaturedProjectComp
+          alignLeft={false}
+          projectTitle="HousePlant - Arduino Project"
+          thumbnailImage={houseplantImage}
+        />
+        <FeaturedProjectComp
+          alignLeft={true}
+          projectTitle="Loose Leads - React app"
+          thumbnailImage={looseleadsImage}
+        />
       </div>
 
       <FooterComp />

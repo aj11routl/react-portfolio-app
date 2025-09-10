@@ -1,5 +1,6 @@
 .content {
   background-color: var(--background);
+  width: 100%;
 }
 
 .section {
@@ -21,6 +22,10 @@
 
 .break-15vh {
   height: 15vh;
+}
+
+.break {
+  margin-bottom: 20vh;
 }
 
 .flex-container {
@@ -45,6 +50,16 @@
   justify-content: center;
   align-items: center;
   padding: 50px;
+}
+
+.flex-align-left {
+  text-align: left;
+  justify-content: left;
+}
+
+.flex-align-right {
+  text-align: right;
+  justify-content: right;
 }
 
 .home-banner-container {
@@ -82,7 +97,7 @@
   left: 50%;
   transform: translate(-50%, -70%);
   width: 50%;
-  height: 50%;
+  height: 70%;
   background: radial-gradient(circle at center, #d3bbea, #4b0082, #0c0b1e);
   filter: blur(120px);
   z-index: -1;
@@ -107,5 +122,9 @@
 }
 
 .fade.in-view {
-  animation: fade 1s 0.75s both;
+  animation: fade 1s 0.5s both;
+}
+
+.fade.in-view-delay {
+  animation: fade 1s 1s both;
 }

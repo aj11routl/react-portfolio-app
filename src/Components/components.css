@@ -69,7 +69,7 @@
   box-shadow: 0px -3px #320f85;
 }
 
-.left-fade {
+.left-flare {
   background: radial-gradient(
       circle at top left,
       /* gradient position */ rgba(123, 97, 255, 0.4),
@@ -78,7 +78,7 @@
     #120024;
 }
 
-.right-fade {
+.right-flare {
   background: radial-gradient(
       circle at top right,
       /* gradient position */ rgba(123, 97, 255, 0.4),
@@ -108,4 +108,133 @@
   text-decoration: none;
   font-family: Kanit;
   margin: 2px;
+}
+
+.text-bubble {
+  margin-top: 10px;
+  z-index: 3;
+  width: 380px;
+  max-width: 380px;
+  min-height: 120px;
+  padding: 15px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 10px;
+}
+
+.text-bubble-text-container {
+  text-align: left;
+  width: 380px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6; /* number of lines before truncation */
+  overflow: hidden;
+}
+
+.text-bubble-gradient-background-right {
+  background: linear-gradient(
+    to bottom right,
+    rgba(60, 28, 79, 1),
+    rgba(199, 178, 212, 0.25) 70%
+  );
+}
+
+.text-bubble-gradient-background-left {
+  background: linear-gradient(
+    to bottom left,
+    rgba(60, 28, 79),
+    rgba(199, 178, 212, 0.25) 70%
+  );
+}
+
+.featured-project-container {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: start;
+  gap: 5px;
+  padding: 10px;
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+}
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: start;
+  gap: 5px;
+
+  position: relative;
+  z-index: 1;
+}
+
+.flex-align-left {
+  text-align: left;
+  align-items: start;
+}
+
+.flex-align-right {
+  text-align: right;
+  align-items: end;
+}
+
+.featured-project-thumbnail-image {
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+  border-radius: 4%;
+}
+
+.project-image-box img {
+  transition: transform 0.3s ease;
+}
+
+.project-image-box:hover img {
+  transform: translateY(-5px) scale(1.05);
+}
+
+/* wraps image box and text bubble to anchor image absolutely according to the text bubble */
+.bubble-wrapper {
+  position: relative; /* anchor point */
+  display: inline-block; /* shrink to bubble size */
+}
+
+.project-image-box {
+  z-index: -1;
+  width: 300px;
+  height: 200px;
+  background-color: #320f85;
+  border-radius: 4%;
+  padding-right: 2%;
+  padding-top: 2%;
+}
+
+@media (min-width: 769px) {
+  .project-image-box.left-anchor {
+    position: absolute;
+    top: 25%;
+    left: 95%;
+    z-index: 0;
+  }
+
+  .project-image-box.right-anchor {
+    position: absolute;
+    top: 25%;
+    right: 95%;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-image-box {
+    position: relative;
+    margin-top: 5px;
+  }
 }
