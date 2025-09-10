@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-portfolio-app/static/css/main.b57dbbeb.css",
+    "main.js": "/react-portfolio-app/static/js/main.2682bfd9.js",
+    "static/js/453.96453769.chunk.js": "/react-portfolio-app/static/js/453.96453769.chunk.js",
+    "static/media/dogadopt-thumbnail.png": "/react-portfolio-app/static/media/dogadopt-thumbnail.b7d6a6ef4d0cdc92712f.png",
+    "static/media/Kanit-Black.ttf": "/react-portfolio-app/static/media/Kanit-Black.46e750f70e304aaafdeb.ttf",
+    "static/media/Kanit-Bold.ttf": "/react-portfolio-app/static/media/Kanit-Bold.e8970fd21bf4d1c9bc81.ttf",
+    "static/media/avatar.png": "/react-portfolio-app/static/media/avatar.c738d68c8d929d66864e.png",
+    "static/media/Kanit-Regular.ttf": "/react-portfolio-app/static/media/Kanit-Regular.eddcf163f39298e319f9.ttf",
+    "static/media/Kanit-Light.ttf": "/react-portfolio-app/static/media/Kanit-Light.0ac3669ba52dd8c966e2.ttf",
+    "static/media/Kanit-ExtraLight.ttf": "/react-portfolio-app/static/media/Kanit-ExtraLight.ed0494a9a17bd41b11c6.ttf",
+    "static/media/houseplant-thumbnail.png": "/react-portfolio-app/static/media/houseplant-thumbnail.74a9d74ea5d694d86ac2.png",
+    "static/media/looseleads-thumbnail.png": "/react-portfolio-app/static/media/looseleads-thumbnail.52c5bf71b740dcc4313c.png",
+    "static/media/12os.png": "/react-portfolio-app/static/media/12os.09e9ab3ea0b667df7c15.png",
+    "static/media/logo.svg": "/react-portfolio-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/react-portfolio-app/index.html",
+    "main.b57dbbeb.css.map": "/react-portfolio-app/static/css/main.b57dbbeb.css.map",
+    "main.2682bfd9.js.map": "/react-portfolio-app/static/js/main.2682bfd9.js.map",
+    "453.96453769.chunk.js.map": "/react-portfolio-app/static/js/453.96453769.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b57dbbeb.css",
+    "static/js/main.2682bfd9.js"
+  ]
+}
