@@ -7,11 +7,11 @@
       // Redirect all unknown routes back to index.html
       (function () {
         var path = window.location.pathname;
-        var repo = "/your-repo-name"; // CHANGE THIS to your repo name
+        var repo = "/react-portfolio-app"; // CHANGE THIS to your repo name
         // If using GitHub Pages under a repo URL, adjust path
-        if (path !== repo + "/" && path !== repo + "/index.html") {
+        if (path !== repo + "/" && path !== repo + "/index.js") {
           window.location.replace(
-            "/react-portfolio-app" + "/index.html#" + path.replace(repo, "")
+            "/react-portfolio-app" + "/index.js#" + path.replace(repo, "")
           );
         }
       })();
