@@ -1,4 +1,21 @@
-<script type="text/javascript">
-  // Redirect all 404s back to index.html (React Router will handle it)
-  window.location.replace(window.location.origin + "/");
-</script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page Not Found</title>
+    <script type="text/javascript">
+      // Redirect all unknown routes back to index.html
+      (function () {
+        var path = window.location.pathname;
+        var repo = "/your-repo-name"; // CHANGE THIS to your repo name
+        // If using GitHub Pages under a repo URL, adjust path
+        if (path !== repo + "/" && path !== repo + "/index.html") {
+          window.location.replace(
+            "/your-repo-name" + "/index.html#" + path.replace(repo, "")
+          );
+        }
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
