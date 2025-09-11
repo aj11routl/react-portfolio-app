@@ -5,6 +5,7 @@
 
 body {
   margin: 0;
+  font-size: clamp(14px, 2.2vw, 16px);
   font-family: Kanit, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -54,9 +55,7 @@ code {
 
 p {
   font-family: Kanit-Light;
-  font-size: 1em;
-  font-weight: 300;
-  color: #dfdfe6;
+  margin: 0 0 1rem;
 }
 
 .underline {
@@ -68,51 +67,56 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   padding: 0;
   margin: 0;
   line-height: 1;
   z-index: 1;
+  color: #dfdfe6;
 }
 
 h1 {
   font-family: Kanit;
-  font-size: 2.5em;
-
-  color: #dfdfe6;
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 1.2rem 0 0.8rem;
 }
 
 h2 {
   font-family: Kanit;
-  font-size: 2em;
-  font-weight: 200;
-  color: #dfdfe6;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 1rem 0 0.6rem;
 }
 
 h3 {
   font-family: Kanit-ExtraLight;
-  font-size: 1.2em;
-  color: #dfdfe6;
+  font-size: clamp(1.25rem, 3.5vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0.8rem 0 0.5rem;
 }
 
 h4 {
   font-family: Kanit-ExtraLight;
-  font-size: 0.8em;
-  color: #dfdfe6;
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  font-weight: 500;
+  margin: 0.6rem 0 0.4rem;
 }
 
 h5 {
-  font-family: Kanit-ExtraLight;
-  font-size: 1em;
-  color: #dfdfe6;
-  margin: 0;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-weight: 500;
+  margin: 0.5rem 0 0.3rem;
 }
 
 h6 {
-  font-family: Kanit-ExtraLight;
-  font-size: 0.5em;
-  color: #dfdfe6;
-  margin: 0;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-weight: 500;
+  margin: 0.4rem 0 0.2rem;
 }
 
 .purple {
@@ -145,4 +149,21 @@ h6 {
 
 .fill-width {
   width: 100%;
+}
+
+button,
+.btn {
+  font-size: clamp(14px, 2vw, 16px);
+  font-weight: 600;
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #0066cc;
+  color: white;
+  transition: background 0.2s ease;
+}
+button:hover,
+.btn:hover {
+  background: #004c99;
 }
