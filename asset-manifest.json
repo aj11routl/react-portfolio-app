@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-portfolio-app/static/css/main.b57dbbeb.css",
+    "main.css": "/react-portfolio-app/static/css/main.e4a2e7c3.css",
     "main.js": "/react-portfolio-app/static/js/main.2682bfd9.js",
     "static/js/453.96453769.chunk.js": "/react-portfolio-app/static/js/453.96453769.chunk.js",
     "static/media/dogadopt-thumbnail.png": "/react-portfolio-app/static/media/dogadopt-thumbnail.b7d6a6ef4d0cdc92712f.png",
@@ -15,12 +15,12 @@
     "static/media/12os.png": "/react-portfolio-app/static/media/12os.09e9ab3ea0b667df7c15.png",
     "static/media/logo.svg": "/react-portfolio-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/react-portfolio-app/index.html",
-    "main.b57dbbeb.css.map": "/react-portfolio-app/static/css/main.b57dbbeb.css.map",
+    "main.e4a2e7c3.css.map": "/react-portfolio-app/static/css/main.e4a2e7c3.css.map",
     "main.2682bfd9.js.map": "/react-portfolio-app/static/js/main.2682bfd9.js.map",
     "453.96453769.chunk.js.map": "/react-portfolio-app/static/js/453.96453769.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b57dbbeb.css",
+    "static/css/main.e4a2e7c3.css",
     "static/js/main.2682bfd9.js"
   ]
 }

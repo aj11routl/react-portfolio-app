@@ -9,9 +9,9 @@
         var path = window.location.pathname;
         var repo = "/react-portfolio-app"; // CHANGE THIS to your repo name
         // If using GitHub Pages under a repo URL, adjust path
-        if (path !== repo + "/" && path !== repo + "/index.js") {
+        if (path !== repo + "/" && path !== repo + "/index.html") {
           window.location.replace(
-            "/react-portfolio-app" + "/index.js#" + path.replace(repo, "")
+            "/react-portfolio-app" + "/index.html#" + path.replace(repo, "")
           );
         }
       })();
