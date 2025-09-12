@@ -9,7 +9,7 @@ function AvatarComp({ image, flareRight = false, delay = true }) {
           // if delay true: add "delay" to classList
           // if flareRight true: add "right-flare" to classList - otherwise "left-flare"
           // right/left-flare CSS classes change the direction of the gradient effect on the card background
-          "card fade" +
+          "card" +
           (delay ? " delay" : "") +
           (flareRight ? " right-flare" : " left-flare")
         }

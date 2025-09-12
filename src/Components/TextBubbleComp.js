@@ -12,9 +12,7 @@ function TextBubbleComp({ text = "", gradientRight = true }) {
           : " text-bubble-gradient-background-left")
       }
     >
-      <div className="text-bubble-text-container">
-        <h3>{text}</h3>
-      </div>
+      <div className="text-bubble-text-box">{text}</div>
     </div>
   );
 }

@@ -111,25 +111,40 @@
 }
 
 .text-bubble {
+  display: inline-block;
+
   margin-top: 10px;
   z-index: 3;
-  width: 380px;
-  max-width: 380px;
-  min-height: 120px;
-  padding: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
+  height: fit-content;
+  max-width: clamp(200px, 90vw, 400px);
+  padding: 1rem 1.5rem;
   border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    rgb(47, 22, 61),
+    rgb(120, 79, 146, 0.5),
+    rgba(232, 229, 234, 0.25),
+    rgb(120, 79, 146, 0.5),
+    rgb(47, 22, 61)
+  );
+  padding: 1rem 1.5rem;
 }
 
-.text-bubble-text-container {
+.text-bubble-text-box {
   text-align: left;
-  width: 380px;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 6; /* number of lines before truncation */
+  /* make div height fit only 6 lines of text*/
+  line-height: 1.2;
+  max-height: calc(1.2em * 6);
   overflow: hidden;
+  text-overflow: ellipsis;
+  /* make div text ellipsis on overflow at end of 6th line */
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  line-clamp: 6;
+  -webkit-line-clamp: 6;
+  word-break: normal;
 }
 
 .text-bubble-gradient-background-right {
@@ -161,11 +176,11 @@
 }
 
 .featured-project-container.left-shift {
-  transform: translate(-20%);
+  transform: translate(0%);
 }
 
 .featured-project-container.right-shift {
-  transform: translate(20%);
+  transform: translate(0%);
 }
 
 .project-box {
@@ -211,6 +226,7 @@
 .bubble-wrapper {
   position: relative; /* anchor point */
   display: inline-block; /* shrink to bubble size */
+  width: fit-content;
 }
 
 .project-image-box {

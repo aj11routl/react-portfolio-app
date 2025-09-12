@@ -14,36 +14,9 @@ import FeaturedProjectComp from "../Components/FeaturedProjectComp.js";
 import dogadoptImage from "../Images/dogadopt-thumbnail.png";
 import houseplantImage from "../Images/houseplant-thumbnail.png";
 import looseleadsImage from "../Images/looseleads-thumbnail.png";
+import TestComp from "../Components/TestComp.js";
 
 function HomePage() {
-  React.useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            if (entry.target.classList.contains("delay")) {
-              entry.target.classList.add("in-view-delay");
-            } else {
-              entry.target.classList.add("in-view");
-            }
-          } else {
-            entry.target.classList.remove("in-view");
-            entry.target.classList.remove("in-view-delay");
-          }
-        });
-      },
-      {
-        rootMargin: "0px",
-        threshold: [0, 0.1, 1],
-      }
-    );
-
-    const tags = document.querySelectorAll("h1, p, .card, h3");
-
-    tags.forEach((tag) => {
-      observer.observe(tag);
-    });
-  });
   return (
     <div className="content">
       <NavbarComp />
@@ -77,7 +50,7 @@ function HomePage() {
       </div>
       <div className="section break">
         <div className="default-text-container">
-          <h1 className="fade">Work Experience</h1>
+          <h1>Work Experience</h1>
         </div>
         <div className="break-15vh"></div>
         <div className="flare-background-container">
@@ -103,7 +76,11 @@ function HomePage() {
             </h3>
           </center>
         </div>
-
+        <TestComp
+          alignLeft={false}
+          projectTitle="HousePlant - Arduino Project"
+          thumbnailImage={houseplantImage}
+        />
         <FeaturedProjectComp
           alignLeft={true}
           projectTitle="DogAdopt - REST Website Project"
@@ -116,7 +93,7 @@ function HomePage() {
         />
         <FeaturedProjectComp
           alignLeft={true}
-          projectTitle="Loose Leads - React app Testiftheposi"
+          projectTitle="Loose Leads - React app"
           thumbnailImage={looseleadsImage}
         />
       </div>

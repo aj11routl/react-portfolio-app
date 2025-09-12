@@ -1,0 +1,36 @@
+.test-bubble {
+  display: inline-block;
+
+  margin-top: 10px;
+  z-index: 3;
+  height: fit-content;
+  max-width: clamp(200px, 90vw, 400px);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    rgb(47, 22, 61),
+    rgb(120, 79, 146, 0.5),
+    rgba(232, 229, 234, 0.25),
+    rgb(120, 79, 146, 0.5),
+    rgb(47, 22, 61)
+  );
+  padding: 1rem 1.5rem;
+}
+
+.test-bubble-text-box {
+  text-align: left;
+  /* make div height fit only 6 lines of text*/
+  line-height: 1.2;
+  max-height: calc(1.2em * 6);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* make div text ellipsis on overflow at end of 6th line */
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  line-clamp: 6;
+  -webkit-line-clamp: 6;
+  word-break: normal;
+}
