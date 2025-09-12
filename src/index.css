@@ -3,6 +3,7 @@
   --navbar: #1a0b2e;
 }
 
+html,
 body {
   margin: 0;
   font-size: clamp(14px, 2.2vw, 16px);
@@ -12,6 +13,8 @@ body {
   background-color: var(--navbar);
   overflow-x: hidden;
   overscroll-behavior: none;
+  overscroll-behavior-x: none;
+  width: 100%;
   color: #dfdfe6;
 }
 
