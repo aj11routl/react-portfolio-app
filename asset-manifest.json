@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/react-portfolio-app/static/css/main.0713c4b0.css",
-    "main.js": "/react-portfolio-app/static/js/main.3e88830f.js",
+    "main.css": "/react-portfolio-app/static/css/main.49557ede.css",
+    "main.js": "/react-portfolio-app/static/js/main.24b22b84.js",
     "static/js/453.96453769.chunk.js": "/react-portfolio-app/static/js/453.96453769.chunk.js",
     "static/media/dogadopt-thumbnail.png": "/react-portfolio-app/static/media/dogadopt-thumbnail.b7d6a6ef4d0cdc92712f.png",
+    "static/media/me.jpg": "/react-portfolio-app/static/media/me.bfd432921da28e4b2b3c.jpg",
     "static/media/Kanit-Black.ttf": "/react-portfolio-app/static/media/Kanit-Black.46e750f70e304aaafdeb.ttf",
     "static/media/Kanit-Bold.ttf": "/react-portfolio-app/static/media/Kanit-Bold.e8970fd21bf4d1c9bc81.ttf",
     "static/media/avatar.png": "/react-portfolio-app/static/media/avatar.c738d68c8d929d66864e.png",
@@ -15,12 +16,12 @@
     "static/media/12os.png": "/react-portfolio-app/static/media/12os.09e9ab3ea0b667df7c15.png",
     "static/media/logo.svg": "/react-portfolio-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/react-portfolio-app/index.html",
-    "main.0713c4b0.css.map": "/react-portfolio-app/static/css/main.0713c4b0.css.map",
-    "main.3e88830f.js.map": "/react-portfolio-app/static/js/main.3e88830f.js.map",
+    "main.49557ede.css.map": "/react-portfolio-app/static/css/main.49557ede.css.map",
+    "main.24b22b84.js.map": "/react-portfolio-app/static/js/main.24b22b84.js.map",
     "453.96453769.chunk.js.map": "/react-portfolio-app/static/js/453.96453769.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0713c4b0.css",
-    "static/js/main.3e88830f.js"
+    "static/css/main.49557ede.css",
+    "static/js/main.24b22b84.js"
   ]
 }
