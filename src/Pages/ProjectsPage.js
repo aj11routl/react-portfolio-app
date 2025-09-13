@@ -1,4 +1,3 @@
-import TrulyNavbarComp from "../Components/TrulyNavbarComp.js";
 import NavbarComp from "../Components/NavbarComp.js";
 
 function ProjectsPage() {

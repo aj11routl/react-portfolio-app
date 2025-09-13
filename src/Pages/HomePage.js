@@ -14,7 +14,6 @@ import FeaturedProjectComp from "../Components/FeaturedProjectComp.js";
 import dogadoptImage from "../Images/dogadopt-thumbnail.png";
 import houseplantImage from "../Images/houseplant-thumbnail.png";
 import looseleadsImage from "../Images/looseleads-thumbnail.png";
-import TestComp from "../Components/TestComp.js";
 
 function HomePage() {
   return (
@@ -24,15 +23,16 @@ function HomePage() {
         <div className="home-banner-container">
           <AvatarComp />
           <div className="home-banner-text-container">
-            <h5 className="padding-bottom-5px underline">A designer who</h5>
-            <h1 className="fade">
-              Judges a book by its <span className="purple">cover...</span>
+            <h1>
+              {" "}
+              My name is <span className="purple">Adam.</span>
             </h1>
+            <h4 className="">Welcome to my CV.</h4>
           </div>
         </div>
       </div>
       <div className="section">
-        <div className="default-text-container">
+        <div className="default-text-container break-15vh">
           <h1 className="padding-5px fade">Beep boop beep boop.|</h1>
           <p className="fade">
             Instance node_modules clean architecture atomic design val.
@@ -67,7 +67,7 @@ function HomePage() {
         </div>
       </div>
       <div className="section">
-        <div className="default-text-container">
+        <div className="default-text-container break">
           <center>
             <h3 className="fade">
               I'm looking to kickstart a career in tech by joining a team in
@@ -76,11 +76,6 @@ function HomePage() {
             </h3>
           </center>
         </div>
-        <TestComp
-          alignLeft={false}
-          projectTitle="HousePlant - Arduino Project"
-          thumbnailImage={houseplantImage}
-        />
         <FeaturedProjectComp
           alignLeft={true}
           projectTitle="DogAdopt - REST Website Project"

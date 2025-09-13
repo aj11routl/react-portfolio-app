@@ -32,17 +32,34 @@
   justify-content: center;
 }
 
-.avatar-image {
-  width: 30vh;
+.avatar-image-container > img {
+  max-width: clamp(150px, 15vw, 300px);
   height: auto;
+  clip-path: circle(50%);
+  z-index: 2;
 }
 
 .avatar-image-container {
+  position: relative;
   display: inline-block;
   height: fit-content;
   width: fit-content;
-  padding: 30px;
+  padding: 1rem;
   background: radial-gradient(closest-side, #9f8cb1 15%, #320f85, transparent);
+}
+
+.avatar-image-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* make it larger than container so it flares out */
+  height: 100%;
+  filter: blur(100px);
+
+  background: radial-gradient(circle at center, #d3bbea, #4b0082, #0c0b1e);
+  z-index: 0;
 }
 
 .card {
@@ -169,7 +186,7 @@
   text-align: left;
   align-items: start;
   gap: 5px;
-  padding: 10px;
+  padding: 1rem;
   position: relative;
   height: fit-content;
   width: fit-content;
